@@ -1,0 +1,78 @@
+{
+	"name": "thndr", 
+	"variables":
+	{
+		"orange": "hsl(30,100%,35%)",
+		"blue": "hsl(200,100%,34%)",
+		"purple": "hsl(280,45%,40%)",
+		"magenta": "hsl(320,100%,36%)",
+		"green": "hsl(160,100%,27%)",
+		"lightgray": "hsl(200,0%,53%)",
+	},
+	"globals":
+	{
+		"background": "hsl(200,0%,97%)",
+		"foreground": "hsl(200,0%,33%)",
+		"caret": "#000",
+		"selection": "hsl(200,0%,91%)",
+	},
+	"rules":
+	[
+		{
+			"name": "Functions",
+			"scope": "variable.function, support.function",
+			"foreground": "var(orange)",
+		},		
+		{
+			"name": "Variables",
+			"scope": "variable.other",
+			"foreground": "var(blue)"
+		},
+		{
+			"name": "Entities",
+			"scope": "entity, punctuation.definition.tag, variable.parameter",
+			"foreground": "var(purple)"
+		},
+		{
+			"name": "Constants",
+			"scope": "constant, support.constant, variable.other.global",
+			"foreground": "var(magenta)"
+		},
+		{
+			"name": "Strings",
+			"scope": "string",
+			"foreground": "var(green)"
+		},		
+		{
+			"name": "Comments",
+			"scope": "comment",
+			"foreground": "var(lightgray)"
+		},
+		{
+			"name": "Text",
+			"scope": "text",
+			"background": "hsl(200,0%,99%)"
+		},
+		{
+			"name": "Text",
+			"scope": "text source, punctuation.section",
+			"background": "hsl(200,0%,97%)"
+		},	
+
+		{
+			"name": "Keywords",
+			"scope": "keyword, punctuation.definition.keyword",
+			"font_style": "bold"
+		},
+		{
+			"name": "Storage",
+			"scope": "storage",
+			"font_style": "bold"
+		},
+		{
+			"name": "Section Punctuation",
+			"scope": "punctuation.section",
+			"font_style": "bold"
+		}
+	]	
+}
